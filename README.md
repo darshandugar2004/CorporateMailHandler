@@ -6,6 +6,13 @@ An intelligent AI agent that automatically reads, classifies, and drafts replies
 
 ![Workflow](workflow.png)
 
+## Hugging Face Model
+
+You can find and use the model on the Hugging Face Hub here:
+
+[darshandugar/MailClassifier-DistilBERT](https://huggingface.co/darshandugar/MailClassifier-DistilBERT) &
+[darshandugar/Corporate-Email-Response-Generator-gemma-2b](https://huggingface.co/darshandugar/Corporate-Email-Response-Generator-gemma-2b)
+
 ## Features
 
   * **Automated Email Polling:** Continuously monitors a Gmail inbox for new, unread emails.
