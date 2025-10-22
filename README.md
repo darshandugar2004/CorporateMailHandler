@@ -2,6 +2,10 @@
 
 An intelligent AI agent that automatically reads, classifies, and drafts replies to incoming corporate emails. Built with Python, LangGraph, and Hugging Face Transformers (BERT & Gemma).
 
+## Workflow
+
+![Workflow](workflow.png)
+
 ## Features
 
   * **Automated Email Polling:** Continuously monitors a Gmail inbox for new, unread emails.
