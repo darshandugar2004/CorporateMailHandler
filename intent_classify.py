@@ -1,12 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-import json
 
-# Define the filename
-filename = "id_to_label.json" 
-with open(filename, "r") as f:
-    loaded_labels = json.load(f)
 
 class IntentClassifier:
     """
@@ -32,10 +27,6 @@ class IntentClassifier:
         
         # Ensure the model is in evaluation mode
         self.model.eval()
-
-        filename = "id_to_label.json" 
-        with open(filename, "r") as f:
-            loaded_labels = json.load(f)
 
         # Get the label mapping from the model's configuration
         self.id_to_label = self.model.config.id2label
@@ -78,8 +69,6 @@ class IntentClassifier:
         
         # Map the predicted ID to its corresponding label string
         predicted_label = self.id_to_label[predicted_id]
-        predicted_label = loaded_labels[predicted_label]
-
 
         return {"label": predicted_label, "confidence": confidence_score}
 
